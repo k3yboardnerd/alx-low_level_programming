@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  *main - Entry point
- *Description: 'Prints Alphabets in lower and upper case'
+ *Description: 'Prints letters except for q & e'
  *Return: Always 0 (Sucess)
  */
 int main(void)
@@ -10,14 +10,11 @@ int main(void)
 
 	for (i = 97; i <= 122; i++)
 	{
-		putchar(i);
+		if (i != 101 && i != 113)
+                {
+			putchar(i);
+		}
 	}
-	
-	for (i = 65; i <= 90; i++)
-	{
-		putchar(i);
-	}
-
 	putchar('\n');
 	return (0);
 }
