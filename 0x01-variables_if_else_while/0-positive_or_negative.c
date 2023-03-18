@@ -1,11 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
- * This is a negative positive code - short description
- * Description: This code assigns n with a random number and then check
- * and print whether the number is positive or negative or zero.
+ * main - Entry point
+ * Description: 'Checks if n is positive or negative or zero'
+ * Return: always 0
  */
 int main(void)
 {
@@ -21,7 +20,7 @@ int main(void)
 	{
 		printf("%d is zero\n", n);
 	}
-	else if (n < 0)
+	else
 	{
 		printf("%d is negative\n", n);
 	}
