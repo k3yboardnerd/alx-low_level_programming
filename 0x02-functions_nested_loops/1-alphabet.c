@@ -1,4 +1,4 @@
-#include <main.h>
+#include <stdio.h>
 /**
  *main - Entry point
  *Description: 'Prints all alphabets'
@@ -6,4 +6,6 @@
  */
 int main(void)
 {
-	print_aplhabet()
+	print_aplhabet();
+	return (0);
+}
