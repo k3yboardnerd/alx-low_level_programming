@@ -1,8 +1,0 @@
-#include <unistd.h>
-/**
- * This funnction prints the char
- */
-int _putchar(char m)
-{
-	return write(STDOUT_FILENO, &c, 1);
-}
