@@ -1,10 +1,7 @@
-void _putchar(char n);
+#ifndef main_h
+#define main_h
 
-void print_alphabet(void)
-{
-	char c;
-	for (c = 'a'; c <= 'z'; c++)
-	{
-		_putchar(c);
-	}
-}
+int _putchar(char);
+void print_alphabet(void);
+
+#endif

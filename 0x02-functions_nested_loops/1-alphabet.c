@@ -1,11 +1,17 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- *main - Entry point
- *Description: 'Prints all alphabets'
- *Return: Always (Success)
+ *print_alphabet - entry point
+ *Description: 'Prints all alphabets in lowercase'
+ *Return: void
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char n;
+
+	for (n = 'a'; n <= 'z'; n++)
+	{
+		_putchar(n);
+	}
+	_putchar('\n');
 }
