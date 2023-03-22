@@ -1,3 +1,5 @@
+void _putchar(char n);
+
 void pint_alphabet(void);
 
 void print_alphabelt(void)
