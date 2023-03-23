@@ -10,8 +10,9 @@
  */
 int print_last_digit(int n)
 {
-	int last_digit = abs(n) % 10;
-
-	printf("%d", last_digit);
-	return (last_digit);
+	if (n < 0)
+	{
+		n = -n;
+	}
+	return (n % 10);
 }
