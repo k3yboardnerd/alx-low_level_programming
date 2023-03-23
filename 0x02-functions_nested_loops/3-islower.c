@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- *islower - Entry point
+ *_islower - Entry point
+ *@parameterc: "takes the int type parameter to check on"
  *Description: "Checks for lowercase character"
- *return: 1 (Success)
+ *Return: 1 (Lowercase) 0 (otherwise) 
  */
 int _islower(int c)
 {
