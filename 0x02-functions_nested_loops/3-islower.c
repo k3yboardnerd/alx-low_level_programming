@@ -2,9 +2,10 @@
 
 /**
  *_islower - Entry point
- *@parameterc: "takes the int type parameter to check on"
+ *@c: "takes the int type parameter to check on"
+ *
  *Description: "Checks for lowercase character"
- *Return: 1 (Lowercase) 0 (otherwise) 
+ *Return: 1 (Lowercase) 0 (otherwise)
  */
 int _islower(int c)
 {
