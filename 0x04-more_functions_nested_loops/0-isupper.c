@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *isupper - checks if the parameter char is upper or not
+ *_isupper - checks if the parameter char is upper or not
  *@c: char c
- *Description: This function cheks if the given parameter is upper or lower cased
+ *Description: This function checks if the given parameter is upper or lower
  *Return: 1 (upper) 0(otherwise)
  */
 int _isupper(int c)
