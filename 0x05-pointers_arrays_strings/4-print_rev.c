@@ -10,11 +10,20 @@
  */
 void print_rev(char *s)
 {
-	int length = strlen(s);
+	int length = 0;
+	int o;
 
-	while (length >= 0)
+	while (*s != '\0')
 	{
-		fwrite(&s[length], sizeof(char), 1, stdout);
-		length--;
+		length++;
+		s++;
 	}
+	s--;
+
+	for (o = length; o > 0; o--)
+	{
+		_putchar(*s);
+		s--;
+	}
+	_putchar('\n');
 }
