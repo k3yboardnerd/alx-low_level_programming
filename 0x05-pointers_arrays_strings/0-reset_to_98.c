@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
  * reset_to_98 - This function reset the value its points to 98
  * @n: Pointer to be reset
