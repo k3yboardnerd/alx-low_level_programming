@@ -12,12 +12,10 @@ void print_rev(char *s)
 {
 	int length = strlen(s);
 
-	int i = length - 1;
-
-	while (i >= 0)
+	while ((length - 1) >= 0)
 	{
-		write(STDOUT_FILENO, &s[i], i);
+		fwrite(&s[length], sizeof(char), 1, stdout);
 		i--;
 	}
-	write(STDOUT_FILENO, "\n", 1);
+	fwrite("\n", sizeof(char), 1, stdout);
 }
