@@ -16,11 +16,12 @@ void print_rev(char *s)
 		s++;
 	}
 
-	int str_len = length;
+	int i = length - 1;
 
-	for (int i = str_len - 1; i >= 0; i--)
+	while (i >= 0)
 	{
-		fputc(s[i], stdout);
+		write(STDOUT_FILENO, &s[i], i);
+		i--;
 	}
-	fputc('\n', stdout);
+	write(STDOUT_FILENO, "\n", 1);
 }
