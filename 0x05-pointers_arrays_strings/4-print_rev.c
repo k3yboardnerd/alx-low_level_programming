@@ -17,5 +17,4 @@ void print_rev(char *s)
 		fwrite(&s[length], sizeof(char), 1, stdout);
 		length--;
 	}
-	fwrite("\n", sizeof(char), 1, stdout);
 }
