@@ -15,7 +15,7 @@ void print_rev(char *s)
 	while ((length - 1) >= 0)
 	{
 		fwrite(&s[length], sizeof(char), 1, stdout);
-		i--;
+		length--;
 	}
 	fwrite("\n", sizeof(char), 1, stdout);
 }
