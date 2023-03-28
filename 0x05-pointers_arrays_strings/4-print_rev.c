@@ -12,7 +12,7 @@ void print_rev(char *s)
 {
 	int length = strlen(s);
 
-	while ((length - 1) >= 0)
+	while (length >= 0)
 	{
 		fwrite(&s[length], sizeof(char), 1, stdout);
 		length--;
