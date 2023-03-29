@@ -9,20 +9,31 @@
 char *cap_string(char *str)
 {
 	int i = 0;
-	int cap_next = 1;
+
+	if (str[i] != '\0')
+	{
+		str[i] = toupper(str[i]);
+		i++;
+	}
 
 	while (str[i] != '\0')
 	{
-		if (isspace(str[i]) || ispunct(str[i]))
+		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' ||
+		    str[i] == ',' || str[i] == ';' || str[i] == '.' ||
+		    str[i] == '!' || str[i] == '?' || str[i] == '"' ||
+		    str[i] == '(' || str[i] == ')' || str[i] == '{' ||
+		    str[i] == '}')
 		{
-			cap_next = 1;
+			i++;
+			if (str[i] != '\0')
+			{
+				str[i] = toupper(str[i]);
+			}
 		}
-		else if (cap_next)
+		else
 		{
-			str[i] = toupper(str[i]);
-			cap_next = 0;
+			i++;
 		}
-		i++;
 	}
 	return (str);
 }
