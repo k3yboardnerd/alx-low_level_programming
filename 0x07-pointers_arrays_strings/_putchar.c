@@ -3,7 +3,7 @@
  * _putchar - prints the char
  * @c: char to printed
  * Description: prints the char
- * Returns: char address
+ * Return: char address
  */
 int _putchar(char c)
 {
