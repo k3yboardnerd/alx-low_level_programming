@@ -1,8 +1,11 @@
 #include <unistd.h>
 /**
- * This funnction prints the char
+ * _putchar - prints the char
+ * @c: char to printed
+ * Description: prints the char
+ * Returns: char address
  */
 int _putchar(char c)
 {
-        return write(1, &c, 1);
+	return (write(1, &c, 1));
 }
