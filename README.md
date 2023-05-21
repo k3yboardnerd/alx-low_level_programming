@@ -1,1 +1,1 @@
-Doing some low lwvwl programming with our beloved C language
+Doing some low level programming with our beloved C language
