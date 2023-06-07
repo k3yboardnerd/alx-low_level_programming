@@ -20,7 +20,7 @@ int _sqrt_recursion(int n)
 		int j = _sqrt_recursion(n / 4) * 2;
 		int m = n - j * j;
 
-		if m == 0)
+		if (m == 0)
 		{
 			return (j);
 		}
