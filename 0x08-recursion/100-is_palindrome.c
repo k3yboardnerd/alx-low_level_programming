@@ -16,13 +16,14 @@ int is_palindrome(char *s)
 		return (1);
 	}
 
-	if (s[0] != s[stringLen - 1])
+	else if (s[0] != s[stringLen - 1])
 	{
 		return (0);
 	}
 
 	s[stringLen - 1] = '\0';
+	int output = is_palindrome(s + 1);
 	s[stringLen - 1] = s[0];
 
-	return (is_palindrome(s + 1) + '\n');
+	return (output + '\n');
 }
