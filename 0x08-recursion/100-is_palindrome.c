@@ -7,6 +7,8 @@
  * Description: this method returns 1 if string is palindrome and 0 if not.
  * Return: 1 if palindrome/ 0 if not
  */
+int is_palindrome(char *);
+
 int is_palindrome(char *s)
 {
 	int stringLen = strlen(s);
@@ -17,7 +19,7 @@ int is_palindrome(char *s)
 		return (1);
 	}
 
-	else if (s[0] != s[stringLen - 1])
+	if (s[0] != s[stringLen - 1])
 	{
 		return (0);
 	}
