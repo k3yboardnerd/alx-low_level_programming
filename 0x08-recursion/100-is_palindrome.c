@@ -10,6 +10,7 @@
 int is_palindrome(char *s)
 {
 	int stringLen = strlen(s);
+	int output;
 
 	if (stringLen <= 1)
 	{
@@ -22,7 +23,7 @@ int is_palindrome(char *s)
 	}
 
 	s[stringLen - 1] = '\0';
-	int output = is_palindrome(s + 1);
+	output = is_palindrome(s + 1);
 	s[stringLen - 1] = s[0];
 
 	return (output + '\n');
