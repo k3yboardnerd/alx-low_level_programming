@@ -7,12 +7,11 @@
  * Description: this method returns 1 if string is palindrome and 0 if not.
  * Return: 1 if palindrome/ 0 if not
  */
-int is_palindrome(char *);
-
 int is_palindrome(char *s)
 {
 	int stringLen = strlen(s);
 	int output;
+	char tempArray[stringLen];
 
 	if (stringLen <= 1)
 	{
@@ -24,9 +23,9 @@ int is_palindrome(char *s)
 		return (0);
 	}
 
-	s[stringLen - 1] = '\0';
-	output = is_palindrome(s + 1);
-	s[stringLen - 1] = s[0];
+	strncpy(tempArray, s + 1, stringLen - 2);
+	tempArray[stringLen - 2] = '\0';
+	output = is_palindrome(tempArray);
 
 	return (output + '\n');
 }
