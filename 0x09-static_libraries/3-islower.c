@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  *_islower - Entry point
  *@c: "takes the int type parameter to check on"
