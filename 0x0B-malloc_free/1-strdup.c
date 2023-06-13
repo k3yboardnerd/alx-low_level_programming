@@ -10,6 +10,7 @@
 char *_strdup(char *str)
 {
 	int str_length;
+	char *str_duplicate;
 
 	if (str == NULL)
 	{
@@ -17,7 +18,7 @@ char *_strdup(char *str)
 	}
 
 	str_length = strlen(str);
-	char *str_duplicate = malloc((str_length + 1) * sizeof(char));
+	str_duplicate = malloc((str_length + 1) * sizeof(char));
 
 	if (str_duplicate == NULL)
 	{
