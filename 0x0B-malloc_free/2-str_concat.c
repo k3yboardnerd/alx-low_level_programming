@@ -10,8 +10,6 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0;
-	int j = 0;
 	int s1_len, s2_len;
 	char *concated;
 
@@ -38,19 +36,8 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	while(s1[i] != '\0')
-	{
-		concated[i] = s1[i];
-		i++;
-	}
-
-	while (s2[j] != '\0')
-	{
-		concated[i + j] = s2[j];
-		j++;
-	}
-
-	concated[i + j] = '\0';
+	strcpy(concated, s1);
+	strcat(concated, s2);
 
 	return (concated);
 }
