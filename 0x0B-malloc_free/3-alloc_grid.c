@@ -3,7 +3,7 @@
 /**
  * alloc_grid - This func returns a pointer to a 2 dimensional arr of int
  * @width: width of grid/arr
- * @heigth: heigth of grid/arr
+ * @height: height of grid/arr
  * Descritpion: returns a pointer to a 2D array of integers
  * Return: arr of int | NULL
  */
