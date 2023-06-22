@@ -7,7 +7,7 @@
  * @s2: string 2 to be concated
  * @n: number of bytes s2
  * Description: Concatenate 2 strings
- * Returns: a concated string
+ * Return: a concated string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
