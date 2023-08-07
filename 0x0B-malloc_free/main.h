@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-
+char *argstostr(int ac, char **av);
 void free_grid(int **grid, int height);
 int _putchar(char c);
 char *create_array(unsigned int size, char c);
