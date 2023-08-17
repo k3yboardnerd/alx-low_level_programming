@@ -3,8 +3,7 @@
 /**
  * get_op_func - This func returns a pointer to the func that corresponds to op
  * @s: operator string
- * Description: This function returns a pointer to the function that corresponds
- * to the operator given as a parameter.
+ * Description: This function returns a ptr to the func that corres op
  * Return: func pointer
  */
 int (*get_op_func(char *s))(int, int)
