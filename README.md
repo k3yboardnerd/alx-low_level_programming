@@ -8,5 +8,6 @@
   - Memory allocation (dynamic)
   - Pointers
   - Structures ```struct```
+  - and many more!
 
 Doing some low level programming with our beloved C language
